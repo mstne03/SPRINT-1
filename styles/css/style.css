@@ -1,6 +1,10 @@
+/*VARIABLES*/
+/*VARIABLES*/
+/*MIXIN*/
 body {
   font-family: Rubik, sans-serif;
   color: #252b46;
+  max-width: 1200px;
 }
 
 .button {
@@ -11,11 +15,11 @@ body {
   padding: 0.5rem 0.7rem;
   margin: 0.6rem;
 }
-
 .button:hover {
   background-color: white;
   color: #5368df;
   border: 1px solid #5368df;
+  cursor: pointer;
 }
 
 .button--alt {
@@ -24,21 +28,13 @@ body {
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.5rem 0.7rem;
+  margin: 0.6rem;
 }
-
 .button--alt:hover {
   background-color: white;
   color: #fa5757;
   border: 1px solid #fa5757;
-}
-
-.header .header__link {
-  text-decoration: none;
-  color: #252b46;
-}
-
-.download__image {
-  min-width: 100%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

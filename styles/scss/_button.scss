@@ -1,0 +1,20 @@
+/*VARIABLES*/
+$primary-color: #5368df;
+$secondary-color: #fa5757;
+
+/*MIXIN*/
+@mixin button-base($bg-color, $text-color, $border-color: transparent) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    padding: .5rem .7rem;
+    margin: .6rem;
+}
+
+@mixin button-hover($bg-color, $text-border-color) {
+    background-color: $bg-color;
+    color: $text-border-color;
+    border: 1px solid $text-border-color;
+    cursor: pointer;
+}
