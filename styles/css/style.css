@@ -12,7 +12,7 @@ html body {
   overflow-x: hidden;
   font-family: Rubik, sans-serif;
   font-size: 1.6rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100vh;
 }
@@ -22,14 +22,18 @@ html body a {
 html body img {
   max-width: 100%;
 }
-/*VARIABLES*/
-/*MIXIN*/
+html body .container {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .button {
   background-color: #5368df;
   color: white;
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 2rem;
   margin: 0.6rem;
 }
 .button:hover {
@@ -44,7 +48,7 @@ html body img {
   color: white;
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.5rem 0.7rem;
+  padding: 1rem 2rem;
   margin: 0.6rem;
 }
 .button--alt:hover {
@@ -52,6 +56,22 @@ html body img {
   color: #fa5757;
   border: 1px solid #fa5757;
   cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto;
+}
+.header-nav__icon-hamburguer, .header-nav__icon-close {
+  display: none;
+}
+.header-nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 /*.nav-overlay {

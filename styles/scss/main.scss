@@ -1,23 +1,6 @@
 @use 'base/reset';
-@use 'base/variables';
-@use 'layout/button';
-
-.button {
-    @include button.button-base(button.$primary-color, variables.$button-text);
-
-    &:hover {
-        @include button.button-hover(variables.$button-text, button.$primary-color);
-    }
-}
-
-.button--alt {
-    @include button.button-base(button.$secondary-color, variables.$button-text);
-
-    &:hover {
-        @include button.button-hover(variables.$button-text, button.$secondary-color);
-    }
-}
-
+@use 'layout/buttons';
+@use 'layout/header';
 /*.nav-overlay {
     position: fixed;
     top: 0;

@@ -1,0 +1,20 @@
+@use '../base/variables';
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+
+    &__icon-hamburguer,
+    &__icon-close {
+        display: none;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+}
