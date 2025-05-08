@@ -7,148 +7,169 @@
     <title>Sprint 1</title>
 </head>
 <body>
-    <header class="header">
-        <img 
+    <header class="container">
+        <div class="header__nav">
+            <img 
             src="Imagenes/logo-bookmark.svg" 
             alt="bookmark logo"
             class="header__logo"
-        />
+            />
 
-        <nav class="header__nav">
-            <a href="#" class="header__link">FEATURES</a>
-            <a href="#" class="header__link">PRICING</a>
-            <a href="#" class="header__link">CONTACT</a>
+            <nav class="header__nav-links">
+                <a href="#" class="header__link">FEATURES</a>
+                <a href="#" class="header__link">PRICING</a>
+                <a href="#" class="header__link">CONTACT</a>
 
-            <button class="button--alt">
-                LOGIN
-            </button>
-        </nav>
+                <button class="button--alt">
+                    LOGIN
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <div class="nav-overlay">
+    <!--<div class="nav-overlay">
         <nav class="nav-mobile">
             <a href="#">FEATURES</a>
             <a href="#">PRICING</a>
             <a href="#">CONTACT</a>
             <a href="#" class="nav-mobile__login">LOGIN</a>
         </nav>
-    </div>
+    </div>-->
 
-    <main class="main">
-        <section class="download">
-            <div class="download__content">
-                <h1 class="download__title">
+    <main class="container">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content-title">
                     A Simple Bookmark Manager
                 </h1>
 
-                <p class="download__text">
+                <p class="hero__content-text">
                     A clean and simple interface to organize
                     your favourite websites. Open a new browser 
                     tab and see your sites load instantly. For free.
                 </p>
 
-                <button class="button">
-                    Get it on Chrome
-                </button>
-
-                <button class="button">
-                    Get it on firefox
-                </button>
+                <div class="hero__info-btns">
+                    <button class="button">
+                        Get it on Chrome
+                    </button>
+    
+                    <button class="button">
+                        Get it on Firefox
+                    </button>
+                </div>
             </div>
 
-            <img 
-                src="Imagenes/illustration-hero.svg" 
-                alt="tablet image"
-                class="download__image"
-            />
+            <div class="hero__image">
+                <img 
+                    src="Imagenes/illustration-hero.svg" 
+                    alt="tablet img"
+                    class="hero__image-file"
+                />
+            </div>
         </section>
 
         <section class="features">
-            <h2 class="features__title">Features</h2>
+            <div class="features__header">
+                <h2 class="features__header-title">Features</h2>
 
-            <p class="features__text">
-                Our aim is to make it quick and easy for
-                you to access your favourite websites. Your
-                bookmarcs sink between your devices so you
-                can access them on the go.
-            </p>
-
-            <div class="features__selectors">
-                <button class="button">
-                    Simple Bookmarking
-                </button>
-
-                <button class="button">
-                    Speedy Searching
-                </button>
-
-                <button class="button">
-                    Easy Sharing
-                </button>
+                <p class="features__header-text">
+                    Our aim is to make it quick and easy for
+                    you to access your favourite websites. Your
+                    bookmarcs sink between your devices so you
+                    can access them on the go.
+                </p>
             </div>
 
-            <div class="bookmarking">
-                <div class="features__content">
-                    <h2 class="bookmarking__title">Bookmark in one click</h2>
-
-                    <p class="bookmarking__text">
-                        Organize bookmarks however you like. Our
-                        simple drag-and-drop interface gives you 
-                        complete control over how you manage your 
-                        favourite sites.
-                    </p>
+            <div class="features__container">
+                <div class="features__selectors">
+                    <button class="features__selectors-button">
+                        Simple Bookmarking
+                    </button>
     
-                    <button class="bookmarking__button">
-                        More Info
+                    <button class="features__selectors-button">
+                        Speedy Searching
+                    </button>
+    
+                    <button class="features__selectors-button">
+                        Easy Sharing
                     </button>
                 </div>
-
-                <img 
-                    src="Imagenes/illustration-features-tab-1.svg" 
-                    alt="browser image"
-                    class="bookmarking__image"
-                />
-            </div>
-            
-            <div class="searching">
-                <div class="features__content">
-                    <h2 class="searching__title">Speedy searching section</h2>
-
-                    <p class="searching__text">
-                        Be faster when searching for a particular website.
-                    </p>
-
-                    <button class="button">
-                        More Info
-                    </button>
+    
+                <div class="features__content features__content--1 active">
+                    <div class="features__content-text">
+                        <h2 class="features__content-text-title">
+                            Bookmark in one click
+                        </h2>
+    
+                        <p class="features__content-text-text">
+                            Organize bookmarks however you like. Our
+                            simple drag-and-drop interface gives you 
+                            complete control over how you manage your 
+                            favourite sites.
+                        </p>
+        
+                        <div class="features__content-button">
+                            <button class="button">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="features__content-img--1">
+                        <img 
+                            src="Imagenes/illustration-features-tab-1.svg" 
+                            alt="browser image"
+                        />
+                    </div>
                 </div>
-
-                <img 
-                    src="Imagenes/illustration-features-tab-1.svg" 
-                    alt="" 
-                    class="searching__image"
-                />
-            </div>
-
-            <div class="sharing">
-                <div class="features__content">
-                    <h2 class="sharing__title">Easy sharing section</h2>
-
-                    <p class="sharing__text">
-                        Bookmark allows you to easily share websites 
-                        with others.
-                    </p>
-
-                    <button class="sharing__button">
-                        More Info
-                    </button>
+                
+                <div class="features__content features__content--2">
+                    <div class="features__content-text">
+                        <h2 class="features__content-text-title">Speedy searching section</h2>
+    
+                        <p class="searching__text-text">
+                            Be faster when searching for a particular website.
+                        </p>
+    
+                        <div class="features__content-button">
+                            <button class="button">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="features__content-img--2">
+                        <img 
+                            src="Imagenes/illustration-features-tab-1.svg" 
+                            alt=""
+                        />
+                    </div>
                 </div>
-
-                <img 
-                    src="Imagenes/illustration-features-tab-1.svg" 
-                    alt="" 
-                    class="sharing__image"
-                />
+    
+                <div class="features__content features__content--3">
+                    <div class="features__content-text">
+                        <h2 class="features__content-text-title">Easy sharing section</h2>
+    
+                        <p class="features__content-text-text">
+                            Bookmark allows you to easily share websites 
+                            with others.
+                        </p>
+    
+                        <div class="features__content-button">
+                            <button class="button">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="features__content-img--3">
+                        <img 
+                            src="Imagenes/illustration-features-tab-1.svg" 
+                            alt=""
+                        />
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -1,22 +1,29 @@
 /*VARIABLES*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+html body {
+  overflow-x: hidden;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+html body a {
+  text-decoration: none;
+}
+html body img {
+  max-width: 100%;
+}
 /*VARIABLES*/
 /*MIXIN*/
-@media (max-width: 500px) {
-  .header .header__nav {
-    display: none;
-  }
-}
-body {
-  font-family: Rubik, sans-serif;
-  color: #252b46;
-  max-width: 1200px;
-}
-
-a {
-  text-decoration: none;
-  color: #252b46;
-}
-
 .button {
   background-color: #5368df;
   color: white;
@@ -46,5 +53,41 @@ a {
   border: 1px solid #fa5757;
   cursor: pointer;
 }
+
+/*.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-media {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      background-color: transparent;
+      text-align: center;
+
+      a {
+        color: white;
+        font-size: 1.25rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        padding: .5rem 0;
+      }
+
+      .nav-mobile__login {
+        margin-top: 1rem;
+        border: 2px solid white;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+    }
+  }*/
 
 /*# sourceMappingURL=style.css.map */

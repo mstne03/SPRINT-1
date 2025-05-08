@@ -1,40 +1,24 @@
-@use 'base/text';
+@use 'base/reset';
+@use 'base/variables';
 @use 'layout/button';
-@use 'base/media-queries';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: text.$primary-font;
-    color: text.$text-color;
-}
-
-a {
-    text-decoration: none;
-    color: text.$text-color;
-}
 
 .button {
-    @include button.button-base(button.$primary-color, text.$button-text);
+    @include button.button-base(button.$primary-color, variables.$button-text);
 
     &:hover {
-        @include button.button-hover(text.$button-text, button.$primary-color);
+        @include button.button-hover(variables.$button-text, button.$primary-color);
     }
 }
 
 .button--alt {
-    @include button.button-base(button.$secondary-color, text.$button-text);
+    @include button.button-base(button.$secondary-color, variables.$button-text);
 
     &:hover {
-        @include button.button-hover(text.$button-text, button.$secondary-color);
+        @include button.button-hover(variables.$button-text, button.$secondary-color);
     }
 }
 
-.nav-overlay {
+/*.nav-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,5 +52,5 @@ a {
         font-weight: bold;
       }
     }
-  }
+  }*/
   

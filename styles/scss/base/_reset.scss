@@ -1,0 +1,33 @@
+@use 'variables';
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        overflow-x: hidden;
+        font-family: variables.$primary-font;
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            
+        }
+    }
+}
