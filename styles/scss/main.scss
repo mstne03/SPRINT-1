@@ -1,6 +1,6 @@
-@use 'text';
-@use 'button';
-@use 'mobile-queries';
+@use 'base/text';
+@use 'layout/button';
+@use 'base/media-queries';
 
 * {
     margin: 0;
@@ -46,7 +46,7 @@ a {
     align-items: center;
     justify-content: center;
   
-    .nav-mobile {
+    .nav-media {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
