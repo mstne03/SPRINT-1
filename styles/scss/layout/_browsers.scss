@@ -17,6 +17,18 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        padding: 3rem;
+        
+        &-chrome,
+        &-firefox,
+        &-opera {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 3rem;
+            margin: 3rem;
+            padding: 3rem;
+            border-radius: 5px;
+        }
     }
 }

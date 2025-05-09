@@ -224,7 +224,16 @@ html body .shadow {
 .browsers__cards {
   display: flex;
   justify-content: space-between;
+}
+.browsers__cards-chrome, .browsers__cards-firefox, .browsers__cards-opera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  margin: 3rem;
   padding: 3rem;
+  border-radius: 5px;
 }
 
 /*.nav-overlay {
