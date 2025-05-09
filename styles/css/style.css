@@ -22,10 +22,22 @@ html body a {
 html body img {
   max-width: 100%;
 }
+html body h1 {
+  font-size: 4rem;
+}
+html body h2 {
+  font-size: 3.5rem;
+}
+html body h3 {
+  font-size: 2.5rem;
+}
 html body .container {
   max-width: 120rem;
   width: 95%;
   margin: 0 auto;
+}
+html body .shadow {
+  box-shadow: 5px 4px 14px 1px rgb(172, 171, 171);
 }
 
 .button {
@@ -69,9 +81,37 @@ html body .container {
 }
 .header-nav__links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 3rem;
+}
+.header-nav__links-divider {
+  visibility: hidden;
+}
+.header-nav__links-link {
+  padding: 1rem 3rem;
+}
+.header-nav__links-link:hover {
+  color: #fa5757;
+}
+.header-nav__links-link-social {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header-nav .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+  }
+  .header-nav .header-nav__icon-hamburguer {
+    display: block;
+  }
+  .header-nav .header-nav__icon-close {
+    display: none;
+  }
+  .header-nav .header-nav__links {
+    display: none;
+  }
 }
 
 /*.nav-overlay {

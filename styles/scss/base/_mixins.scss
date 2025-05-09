@@ -13,3 +13,9 @@
     border: 1px solid $text-border-color;
     cursor: pointer;
 }
+
+@mixin link-hover($color) {
+    &:hover {
+        color: $color;
+    }
+}
