@@ -1,0 +1,22 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.browsers {
+    display: flex;
+    flex-direction: column;
+    
+    &__header {
+        text-align: center;
+        margin: 2rem 6rem;
+
+        @media only screen and (min-width: 768px) {
+            margin: 2rem 20rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+}

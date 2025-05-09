@@ -16,6 +16,11 @@ html body {
   padding: 0;
   height: 100vh;
 }
+html body p {
+  font-size: 2rem;
+  color: #9194a1;
+  line-height: 4rem;
+}
 html body a {
   text-decoration: none;
 }
@@ -43,30 +48,32 @@ html body .shadow {
 .button {
   background-color: #5368df;
   color: white;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 1rem 2rem;
-  margin: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem 2.5rem;
+  border: 2px solid #5368df;
+  border-radius: 0.5rem;
+  margin: 1rem;
 }
 .button:hover {
   background-color: white;
   color: #5368df;
-  border: 1px solid #5368df;
+  border: 2px solid #5368df;
   cursor: pointer;
 }
-
 .button--alt {
   background-color: #fa5757;
   color: white;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 1rem 2rem;
-  margin: 0.6rem;
+  padding: 1.5rem 2.5rem;
+  border: 2px solid #fa5757;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
 }
 .button--alt:hover {
   background-color: white;
   color: #fa5757;
-  border: 1px solid #fa5757;
+  border: 2px solid #fa5757;
   cursor: pointer;
 }
 
@@ -97,21 +104,127 @@ html body .shadow {
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .header-nav .header-nav {
+  .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 4rem auto;
   }
-  .header-nav .header-nav__icon-hamburguer {
+  .header-nav__icon-hamburguer {
     display: block;
   }
-  .header-nav .header-nav__icon-close {
+  .header-nav__icon-close {
     display: none;
   }
-  .header-nav .header-nav__links {
+  .header-nav__links {
     display: none;
   }
+}
+
+.hero {
+  display: flex;
+  margin: 8rem auto;
+  gap: 5rem;
+}
+.hero__content {
+  flex: 1;
+}
+.hero__image {
+  flex: 1;
+  position: relative;
+}
+.hero__info-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 2rem auto;
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__content {
+    text-align: center;
+    margin: 0 6rem;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+.features__header {
+  align-items: center;
+  text-align: center;
+  margin: 0 9rem;
+}
+@media only screen and (min-width: 800px) {
+  .features__header {
+    margin: 0 15rem;
+  }
+}
+.features__container-selectors {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 6rem;
+}
+.features__container-selectors-button {
+  background-color: transparent;
+  margin: 2rem auto;
+  color: #9194a1;
+  padding: 2.5rem;
+  border: 0.2rem solid transparent;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.features__container-selectors-button:hover {
+  background-color: none;
+  cursor: pointer;
+  color: #fa5757;
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid #fa5757;
+}
+.features__content {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 6rem;
+}
+.features__content--2, .features__content--3 {
+  display: none;
+}
+.features__content-button {
+  margin: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .features {
+    text-align: center;
+  }
+  .features__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.browsers {
+  display: flex;
+  flex-direction: column;
+}
+.browsers__header {
+  text-align: center;
+  margin: 2rem 6rem;
+}
+@media only screen and (min-width: 768px) {
+  .browsers__header {
+    margin: 2rem 20rem;
+  }
+}
+.browsers__cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
 }
 
 /*.nav-overlay {

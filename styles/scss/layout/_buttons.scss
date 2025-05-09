@@ -2,17 +2,30 @@
 @use '../base/mixins';
 
 .button {
-    @include mixins.button-base(variables.$primary-color, variables.$button-text);
+    background-color: variables.$primary-color;
+    color: variables.$button-text;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 2rem 2.5rem;
+    border: 2px solid variables.$primary-color;
+    border-radius: .5rem;
+    margin: 1rem;
 
     &:hover {
         @include mixins.button-hover(variables.$button-text, variables.$primary-color);
     }
-}
 
-.button--alt {
-    @include mixins.button-base(variables.$secondary-color, variables.$button-text);
+    &--alt {
+        background-color: variables.$secondary-color;
+        color: variables.$button-text;
+        padding: 1.5rem 2.5rem;
+        border: 2px solid variables.$secondary-color;
+        border-radius: .5rem;
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
 
-    &:hover {
-        @include mixins.button-hover(variables.$button-text, variables.$secondary-color);
+        &:hover {
+            @include mixins.button-hover(variables.$button-text, variables.$secondary-color);
+        }
     }
 }

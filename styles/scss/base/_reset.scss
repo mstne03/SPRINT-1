@@ -18,6 +18,12 @@ html {
         padding: 0;
         height: 100vh;
 
+        p {
+            font-size: 2rem;
+            color: variables.$light-text;
+            line-height: 4rem;
+        }
+
         a {
             text-decoration: none;
 

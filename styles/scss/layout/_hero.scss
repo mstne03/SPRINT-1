@@ -1,3 +1,35 @@
 @use '../base/variables';
 @use '../base/mixins';
 
+.hero {
+    display: flex;
+    margin: 8rem auto;
+    gap: 5rem;
+    
+    &__content {
+        flex: 1;
+    }
+
+    &__image {
+        flex: 1;
+        position: relative;
+    }
+
+    &__info-btns {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 2rem auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__content {
+            text-align: center;
+            margin: 0 6rem;
+        }
+    }
+}
