@@ -116,7 +116,7 @@
                     </button>
                 </div>
     
-                <div class="features__content features__content--1 active">
+                <div class="features__container-content features__container-content--1 active">
                     <div class="features__content-text">
                         <h2 class="features__content-text-title">
                             Bookmark in one click
@@ -129,14 +129,14 @@
                             favourite sites.
                         </p>
         
-                        <div class="features__content-button">
+                        <div class="features__container-content-button">
                             <button class="button">
                                 More Info
                             </button>
                         </div>
                     </div>
     
-                    <div class="features__content-img--1">
+                    <div class="features__container-content-img--1">
                         <img 
                             src="Imagenes/illustration-features-tab-1.svg" 
                             alt="browser image"
@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 
-                <div class="features__content features__content--2">
+                <div class="features__container-content features__container-content--2">
                     <div class="features__content-text">
                         <h2 class="features__content-text-title">Speedy searching section</h2>
     
@@ -154,14 +154,14 @@
                             quos obcaecati tempore itaque.
                         </p>
     
-                        <div class="features__content-button">
+                        <div class="features__container-content-button">
                             <button class="button">
                                 More Info
                             </button>
                         </div>
                     </div>
     
-                    <div class="features__content-img--2">
+                    <div class="features__container-content-img--2">
                         <img 
                             src="Imagenes/illustration-features-tab-1.svg" 
                             alt=""
@@ -169,7 +169,7 @@
                     </div>
                 </div>
     
-                <div class="features__content features__content--3">
+                <div class="features__container-content features__container-content--3">
                     <div class="features__content-text">
                         <h2 class="features__content-text-title">Easy sharing section</h2>
     
@@ -179,14 +179,14 @@
                             quos obcaecati tempore itaque.
                         </p>
     
-                        <div class="features__content-button">
+                        <div class="features__container-content-button">
                             <button class="button">
                                 More Info
                             </button>
                         </div>
                     </div>
     
-                    <div class="features__content-img--3">
+                    <div class="features__container-content-img--3">
                         <img 
                             src="Imagenes/illustration-features-tab-1.svg" 
                             alt=""
@@ -208,11 +208,10 @@
             </div>
 
             <div class="browsers__cards">
-                <div class="browsers__cards-chrome shadow">
+                <div class="browsers__cards-card--chrome shadow">
                     <img 
                         src="Imagenes/logo-chrome.svg" 
                         alt="chrome logo"
-                        class="browsers__logo"
                     />
 
                     <h4>Add to Chrome</h4>
@@ -230,11 +229,10 @@
                     </button>
                 </div>
 
-                <div class="browsers__cards-firefox shadow">
+                <div class="browsers__cards-card--firefox shadow">
                     <img 
                         src="Imagenes/logo-firefox.svg" 
-                        alt="firefox logo"  
-                        class="browsers__logo"
+                        alt="firefox logo"
                     />
 
                     <h4>Add to Firefox</h4>
@@ -252,11 +250,10 @@
                     </button>
                 </div>
 
-                <div class="browsers__cards-opera shadow">
+                <div class="browsers__cards-card--opera shadow">
                     <img 
                         src="Imagenes/logo-opera.svg" 
-                        alt="opera logo"  
-                        class="browsers__logo"
+                        alt="opera logo"
                     />
 
                     <h4>Add to Opera</h4>
@@ -277,38 +274,77 @@
         </section>
 
         <section class="faq">
-            <h2>Frequently asked questions</h2>
+            <div class="faq__text">
+                <h2>Frequently asked questions</h2>
 
-            <p>
-                Here are some of our FAQs. If you have any other 
-                questions you'd like answered please feel free to
-                email us.
-            </p>
+                <p>
+                    Here are some of our FAQs. If you have any other 
+                    questions you'd like answered please feel free to
+                    email us.
+                </p>
+            </div>
 
-            <button class="button">
-                What is bookmark?
-                <span class="faq__icon"></span>
-            </button>
+            <div class="faq__details">
+                <hr/>
+                <details class="faq__details-detail">
+                    <summary>What is bookmark?</summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Odit mollitia excepturi 
+                        autem hic consequuntur quaerat itaque dolores, 
+                        eum aspernatur reiciendis quis, voluptate quisquam 
+                        assumenda laudantium ducimus. Perferendis omnis 
+                        aspernatur deserunt?
+                    </p>
+                </details>
+                <hr/>
+                <details class="faq__details-detail">
+                    <summary>How can I request a new browser?</summary>
 
-            <button class="button">
-                How can I request a new browser?
-                <span class="faq__icon"></span>
-            </button>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Odit mollitia excepturi 
+                        autem hic consequuntur quaerat itaque dolores, 
+                        eum aspernatur reiciendis quis, voluptate quisquam 
+                        assumenda laudantium ducimus. Perferendis omnis 
+                        aspernatur deserunt?
+                    </p>
+                </details>
+                <hr/>
+                <details class="faq__details-detail">
+                    <summary>Is there a mobile app?</summary>
 
-            <button class="button">
-                Is there a mobile app?
-                <span class="faq__icon"></span>
-            </button>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Odit mollitia excepturi 
+                        autem hic consequuntur quaerat itaque dolores, 
+                        eum aspernatur reiciendis quis, voluptate quisquam 
+                        assumenda laudantium ducimus. Perferendis omnis 
+                        aspernatur deserunt?
+                    </p>
+                </details>
+                <hr/>
+                <details class="faq__details-detail">
+                    <summary>What about other Chromium browsers?</summary>
 
-            <button class="button">
-                What about other Chromium browsers?
-                <span class="faq__icon"></span>
-            </button>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Odit mollitia excepturi 
+                        autem hic consequuntur quaerat itaque dolores, 
+                        eum aspernatur reiciendis quis, voluptate quisquam 
+                        assumenda laudantium ducimus. Perferendis omnis 
+                        aspernatur deserunt?
+                    </p>
+                </details>
+                <hr/>
+            </div>
+
+            <div class="faq__more-info">
+                <button class="button">
+                    More Info
+                </button>
+            </div>
         </section>
-
-        <button class="browser__button">
-            More Info
-        </button>
     </main>
 
     <footer class="footer">

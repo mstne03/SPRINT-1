@@ -18,9 +18,9 @@
         display: flex;
         justify-content: space-between;
         
-        &-chrome,
-        &-firefox,
-        &-opera {
+        &-card--chrome,
+        &-card--firefox,
+        &-card--opera {
             display: flex;
             flex-direction: column;
             justify-content: center;

@@ -187,24 +187,27 @@ html body .shadow {
   border: 0.2rem solid transparent;
   border-bottom: 0.2rem solid #fa5757;
 }
-.features__content {
+.features__container__content {
   display: flex;
   justify-content: center;
   margin: 2rem 6rem;
 }
-.features__content--2, .features__content--3 {
+.features__container__content--2, .features__container__content--3 {
   display: none;
 }
-.features__content-button {
+.features__container__content-button {
   margin: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .features__container__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 768px) {
   .features {
     text-align: center;
-  }
-  .features__content {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -225,7 +228,7 @@ html body .shadow {
   display: flex;
   justify-content: space-between;
 }
-.browsers__cards-chrome, .browsers__cards-firefox, .browsers__cards-opera {
+.browsers__cards-card--chrome, .browsers__cards-card--firefox, .browsers__cards-card--opera {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,40 +239,30 @@ html body .shadow {
   border-radius: 5px;
 }
 
-/*.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .75);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .nav-media {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      background-color: transparent;
-      text-align: center;
-
-      a {
-        color: white;
-        font-size: 1.25rem;
-        border-bottom: 1px solid rgba(255, 255, 255, .2);
-        padding: .5rem 0;
-      }
-
-      .nav-mobile__login {
-        margin-top: 1rem;
-        border: 2px solid white;
-        padding: .5rem 1rem;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-    }
-  }*/
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq__text {
+  text-align: center;
+  margin: 2rem 6rem;
+}
+.faq__details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.faq__details-detail {
+  padding: 2rem;
+}
+.faq__details-detail summary:hover {
+  color: #fa5757;
+}
+.faq__more-info {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */

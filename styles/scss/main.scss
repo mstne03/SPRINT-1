@@ -4,39 +4,4 @@
 @use 'layout/hero';
 @use 'layout/features';
 @use 'layout/browsers';
-/*.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .75);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    .nav-media {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      background-color: transparent;
-      text-align: center;
-  
-      a {
-        color: white;
-        font-size: 1.25rem;
-        border-bottom: 1px solid rgba(255, 255, 255, .2);
-        padding: .5rem 0;
-      }
-  
-      .nav-mobile__login {
-        margin-top: 1rem;
-        border: 2px solid white;
-        padding: .5rem 1rem;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-    }
-  }*/
-  
+@use 'layout/faq';

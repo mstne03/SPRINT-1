@@ -38,29 +38,32 @@
                 }
             }
         }
-    }
-
-    &__content {
-        display: flex;
-        justify-content: center;
-        margin: 2rem 6rem;
-
-        &--2,
-        &--3 {
-            display: none;
-        }
-
-        &-button {
-            margin: 2rem;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        text-align: center;
 
         &__content {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            margin: 2rem 6rem;
+
+            &--2,
+            &--3 {
+                display: none;
+            }
+
+            &-button {
+                margin: 2rem;
+            }
+
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+            }
         }
+    }
+
+    
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
     }
 }
