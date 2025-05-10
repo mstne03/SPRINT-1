@@ -187,22 +187,29 @@ html body .shadow {
   border: 0.2rem solid transparent;
   border-bottom: 0.2rem solid #fa5757;
 }
-.features__container__content {
+.features__container-content {
   display: flex;
   justify-content: center;
-  margin: 2rem 6rem;
+  gap: 6rem;
 }
-.features__container__content--2, .features__container__content--3 {
+.features__container-content-text {
+  margin: auto 6rem;
+}
+.features__container-content--2, .features__container-content--3 {
   display: none;
 }
-.features__container__content-button {
+.features__container-content-button {
   margin: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .features__container__content {
-    text-align: center;
+  .features__container-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: auto 9rem;
+  }
+  .features__container-content--2, .features__container-content--3 {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
