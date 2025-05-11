@@ -3,55 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/scss/main.scss">
     <title>Sprint 1</title>
 </head>
 <body>
-    <header class="container">
-        <div class="header-nav">
-            <img 
-                src="Imagenes/logo-bookmark.svg" 
-                alt="bookmark logo"
-            />
+    <header class="row">
+        <div class="row">
+            <div class="col">
+                <img 
+                    src="Imagenes/logo-bookmark.svg" 
+                    alt="bookmark logo"
+                />
+            </div>
 
-            <img
-                class="header-nav__icon-hamburguer"
-                src="Imagenes/icon-hamburger.svg" 
-                alt="hamburguer icon"
-            />
+            <div class="col">
+                <img
+                    class="header-nav__icon-hamburguer"
+                    src="Imagenes/icon-hamburger.svg" 
+                    alt="hamburguer icon"
+                />
+            </div>
 
-            <img 
-                class="header-nav__icon-close"
-                src="Imagenes/icon-close.svg" 
-                alt="close icon"
-            />
+            <div class="col">
+                <img 
+                    class="header-nav__icon-close"
+                    src="Imagenes/icon-close.svg" 
+                    alt="close icon"
+                />
+            </div>
 
-            <nav class="header-nav__links">
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">FEATURES</a>
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">PRICING</a>
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">CONTACT</a>
-                <hr class="header-nav__links-divider"/>
+            <div class="col">
+                <nav class="row">
+                    <hr style="display: none"/>
+                    <a href="#" class="col">FEATURES</a>
+                    <hr style="display: none"/>
+                    <a href="#" class="col">PRICING</a>
+                    <hr style="display: none"/>
+                    <a href="#" class="col">CONTACT</a>
+                    <hr style="display: none"/>
 
-                <button class="button--alt shadow">
-                    LOGIN
-                </button>
+                    <div class="col">
+                        <button class="shadow">
+                            LOGIN
+                        </button>
+                    </div>
 
-                <div class="header-nav__links-link-social">
-                    <img
-                        class="header-nav__links-link-social--facebook"
-                        src="Imagenes/icon-facebook.svg" 
-                        alt="Facebook"
-                    />
+                    <div class="col">
+                        <img
+                            src="Imagenes/icon-facebook.svg" 
+                            alt="Facebook"
+                        />
 
-                    <img 
-                        class="header-nav__links-link-social--twitter"
-                        src="Imagenes/icon-twitter.svg" 
-                        alt="Twitter"
-                    />
-                </div>
-            </nav>
+                        <img 
+                            src="Imagenes/icon-twitter.svg" 
+                            alt="Twitter"
+                        />
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -369,5 +379,7 @@
             <a href="" class="footer__link">CONTACT</a>
         </div>
     </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
