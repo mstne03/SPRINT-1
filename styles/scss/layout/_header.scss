@@ -33,21 +33,21 @@
     }
 
     @media only screen and (max-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 4rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem auto;
 
-            &__icon-hamburguer {
-                display: block;
-            }
+        &__icon-hamburguer {
+            display: block;
+        }
 
-            &__icon-close {
-                display: none;
-            }
+        &__icon-close {
+            display: none;
+        }
 
-            &__links {
-                display: none;
-            }
+        &__links {
+            display: none;
+        }
     }
 }
