@@ -3,67 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/scss/main.scss">
     <title>Sprint 1</title>
 </head>
 <body>
-    <header class="row">
-        <div class="row">
-            <div class="col">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
                 <img 
-                    src="Imagenes/logo-bookmark.svg" 
-                    alt="bookmark logo"
+                    src="Imagenes/logo-bookmark.svg"
+                    alt="logo bookmark"
                 />
-            </div>
+            </a>
 
-            <div class="col">
-                <img
-                    class="header-nav__icon-hamburguer"
-                    src="Imagenes/icon-hamburger.svg" 
-                    alt="hamburguer icon"
-                />
-            </div>
+            <button 
+                class="navbar-toggler" 
+                type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="col">
-                <img 
-                    class="header-nav__icon-close"
-                    src="Imagenes/icon-close.svg" 
-                    alt="close icon"
-                />
-            </div>
-
-            <div class="col">
-                <nav class="row">
-                    <hr style="display: none"/>
-                    <a href="#" class="col">FEATURES</a>
-                    <hr style="display: none"/>
-                    <a href="#" class="col">PRICING</a>
-                    <hr style="display: none"/>
-                    <a href="#" class="col">CONTACT</a>
-                    <hr style="display: none"/>
-
-                    <div class="col">
-                        <button class="shadow">
-                            LOGIN
-                        </button>
-                    </div>
-
-                    <div class="col">
-                        <img
-                            src="Imagenes/icon-facebook.svg" 
-                            alt="Facebook"
-                        />
-
-                        <img 
-                            src="Imagenes/icon-twitter.svg" 
-                            alt="Twitter"
-                        />
-                    </div>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <main class="container">
         <section class="hero">
