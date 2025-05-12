@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/css/style.scss">
     <title>Sprint 1</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-primary">
-        <div class="container-fluid">
+    <nav class="container-xxl navbar navbar-expand-md  bg-body-primary">
+        <div class="container-fluid mt-4">
             <a class="navbar-brand" href="#">
                 <img 
                     src="Imagenes/logo-bookmark.svg"
@@ -29,43 +29,54 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">FEATURES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">PRICING</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">CONTACT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item mx-4">
+                        <a class="btn btn-primary px-3 py-2">LOGIN</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-xxl mt-5">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+    <div class="container-xxl my-5 px-4">
+        <div class="row">
+            <div class="card-body col-md-2 pe-5 pt-5 mb-5 me-4">
+                <h3 class="card-title mb-3">A Simple Bookmark Manager</h3>
 
-            <p class="card-text">
-                A clean and simple interface to organize
-                your favourite websites. Open a new browser
-                tab and see your sites load instantly.
-                Try it for free.
-            </p>
+                <p class="card-text">
+                    A clean and simple interface to organize
+                    your favourite websites. Open a new browser
+                    tab and see your sites load instantly.
+                    Try it for free.
+                </p>
 
-            <a href="#" class="btn btn-primary">
-                Get it on Chrome
-            </a>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="#" class="btn btn-primary px-3 py-3">
+                        Get it on Chrome
+                    </a>
 
-            <a href="#" class="btn btn-primary">
-                Get it on Firefox
-            </a>
+                    <a href="#" class="btn btn-primary px-3 py-3">
+                        Get it on Firefox
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <img 
+                    src="Imagenes/illustration-hero.svg" 
+                    class="card-img-top" 
+                    alt="hero img"
+                />
+            </div>
         </div>
     </div>
 
