@@ -1,0 +1,53 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+
+    &__icon-hamburguer,
+    &__icon-close {
+        display: none;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        &-divider {
+            visibility: hidden;
+        }
+
+        &-link {
+            padding: 1rem 3rem;
+
+            @include mixins.link-hover(variables.$secondary-color);
+
+            &-social {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem auto;
+
+        &__icon-hamburguer {
+            display: block;
+        }
+
+        &__icon-close {
+            display: none;
+        }
+
+        &__links {
+            display: none;
+        }
+    }
+}

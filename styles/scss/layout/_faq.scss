@@ -1,0 +1,33 @@
+@use '../base/mixins';
+@use '../base/variables';
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+        margin: 2rem 6rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &-detail {
+            padding: 2rem;
+            
+            summary {
+                @include mixins.link-hover(variables.$secondary-color);
+            }
+        }
+    }
+
+    &__more-info {
+        display: flex;
+        justify-content: center;
+    }
+}

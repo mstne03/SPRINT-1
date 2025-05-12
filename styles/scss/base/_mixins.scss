@@ -1,0 +1,20 @@
+@mixin button-hover($bg-color, $text-border-color) {
+    background-color: $bg-color;
+    color: $text-border-color;
+    border: 2px solid $text-border-color;
+    cursor: pointer;
+}
+
+@mixin features-hover($bg-color) {
+    background-color: none;
+    cursor: pointer;
+    color: $bg-color;
+    border: .2rem solid transparent;
+    border-bottom: .2rem solid $bg-color;
+}
+
+@mixin link-hover($color) {
+    &:hover {
+        color: $color;
+    }
+}
