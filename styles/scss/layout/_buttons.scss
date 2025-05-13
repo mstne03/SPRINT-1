@@ -9,7 +9,7 @@
     padding: 2rem 2.5rem;
     border: 2px solid variables.$primary-color;
     border-radius: .5rem;
-    margin: 1rem;
+    margin: 0;
 
     &:hover {
         @include mixins.button-hover(variables.$button-text, variables.$primary-color);

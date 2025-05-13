@@ -4,10 +4,12 @@
 .browsers {
     display: flex;
     flex-direction: column;
+    margin-bottom: 4rem;
     
     &__header {
         text-align: center;
         margin: 2rem 6rem;
+        gap: 1rem;
 
         @media only screen and (min-width: 768px) {
             margin: 2rem 20rem;
@@ -36,6 +38,11 @@
                 max-width: 120px;
                 align-self: center;
             }
+        }
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            margin: auto 10rem;
         }
     }
 }
