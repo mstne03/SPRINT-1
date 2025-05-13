@@ -3,359 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/vanilla-css/vanilla-style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/vanilla-css/vanilla-style.css">
     <title>Sprint 1</title>
 </head>
 <body>
-<header class="container">
-        <div class="header-nav">
-            <img 
-                src="Imagenes/logo-bookmark.svg" 
-                alt="bookmark logo"
-            />
+    <nav class="container-xxl navbar navbar-expand-md  bg-body-primary">
+        <div class="container-fluid mt-4">
+            <a class="navbar-brand" href="#">
+                <img 
+                    src="Imagenes/logo-bookmark.svg"
+                    alt="logo bookmark"
+                />
+            </a>
 
-            <img
-                class="header-nav__icon-hamburguer"
-                src="Imagenes/icon-hamburger.svg" 
-                alt="hamburguer icon"
-            />
+            <button 
+                class="navbar-toggler" 
+                type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <img 
-                class="header-nav__icon-close"
-                src="Imagenes/icon-close.svg" 
-                alt="close icon"
-            />
-
-            <nav class="header-nav__links">
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">FEATURES</a>
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">PRICING</a>
-                <hr class="header-nav__links-divider"/>
-                <a href="#" class="header-nav__links-link">CONTACT</a>
-                <hr class="header-nav__links-divider"/>
-
-                <button class="button--alt shadow">
-                    LOGIN
-                </button>
-
-                <div class="header-nav__links-link-social">
-                    <img
-                        class="header-nav__links-link-social--facebook"
-                        src="Imagenes/icon-facebook.svg" 
-                        alt="Facebook"
-                    />
-
-                    <img 
-                        class="header-nav__links-link-social--twitter"
-                        src="Imagenes/icon-twitter.svg" 
-                        alt="Twitter"
-                    />
-                </div>
-            </nav>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-danger m-4 px-4 py-2 fs-5">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__content-title">
-                    A Simple Bookmark Manager
-                </h1>
+    <section class="container-xxl my-5 px-4">
+        <div class="row">
+            <div class="col-md-5 my-4">
+                <div class="card text-center text-md-start border-0 mt-5">
+                    <h2 class="card-title mb-3 fs-1 fw-bold ms-0">
+                        A Simple Bookmark Manager
+                    </h2>
 
-                <p class="hero__content-text">
-                    A clean and simple interface to organize
-                    your favourite websites. Open a new browser 
-                    tab and see your sites load instantly. For free.
-                </p>
+                    <p class="card-text me-3 ms-0">
+                        A clean and simple interface to organize
+                        your favourite websites. Open a new browser
+                        tab and see your sites load instantly.
+                        Try it for free.
+                    </p>
 
-                <div class="hero__info-btns">
-                    <button class="button">
-                        Get it on Chrome
-                    </button>
-    
-                    <button class="button">
-                        Get it on Firefox
-                    </button>
+                    <div class="d-flex gap-4 my-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="btn btn-primary p-4 fs-5 button">
+                            Get it on Chrome
+                        </a>
+
+                        <a href="#" class="btn btn-primary p-4 fs-5 button">
+                            Get it on Firefox
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="hero__image">
+            <div class="col">
                 <img 
                     src="Imagenes/illustration-hero.svg" 
-                    alt="tablet img"
-                    class="hero__image-file"
+                    class="card-img-top" 
+                    alt="hero img"
                 />
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="features__header">
-                <h2 class="features__header-title">Features</h2>
+    <section class="container-xxl my-5 px-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold m-5 ms-0 mb-3">
+                    Features
+                </h2>
 
-                <p class="features__header-text">
+                <p class="mx-5 px-5">
                     Our aim is to make it quick and easy for
                     you to access your favourite websites. Your
-                    bookmarcs sink between your devices so you
+                    bookmarks sink between your devices so you
                     can access them on the go.
                 </p>
+            
+                <ul class="nav nav-underline justify-content-center p-5 gap-5">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Simple Bookmarking
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Speedy Searching
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            Easy Sharing
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="features__container">
-                <div class="features__container-selectors">
-                    <button class="features__container-selectors-button">
-                        Simple Bookmarking
-                    </button>
-    
-                    <button class="features__container-selectors-button">
-                        Speedy Searching
-                    </button>
-    
-                    <button class="features__container-selectors-button">
-                        Easy Sharing
-                    </button>
-                </div>
-    
-                <div class="features__container-content features__container-content--1 active">
-                    <div class="features__content-text">
-                        <h2 class="features__content-text-title">
-                            Bookmark in one click
-                        </h2>
-    
-                        <p class="features__content-text-text">
-                            Organize bookmarks however you like. Our
-                            simple drag-and-drop interface gives you 
-                            complete control over how you manage your 
-                            favourite sites.
-                        </p>
-        
-                        <div class="features__container-content-button">
-                            <button class="button">
-                                More Info
-                            </button>
-                        </div>
-                    </div>
-    
-                    <div class="features__container-content-img--1">
-                        <img 
-                            src="Imagenes/illustration-features-tab-1.svg" 
-                            alt="browser image"
-                        />
-                    </div>
-                </div>
-                
-                <div class="features__container-content features__container-content--2">
-                    <div class="features__content-text">
-                        <h2 class="features__content-text-title">Speedy searching section</h2>
-    
-                        <p class="searching__text-text">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Eaque doloribus tempora 
-                            quos obcaecati tempore itaque.
-                        </p>
-    
-                        <div class="features__container-content-button">
-                            <button class="button">
-                                More Info
-                            </button>
-                        </div>
-                    </div>
-    
-                    <div class="features__container-content-img--2">
-                        <img 
-                            src="Imagenes/illustration-features-tab-1.svg" 
-                            alt=""
-                        />
-                    </div>
-                </div>
-    
-                <div class="features__container-content features__container-content--3">
-                    <div class="features__content-text">
-                        <h2 class="features__content-text-title">Easy sharing section</h2>
-    
-                        <p class="features__content-text-text">
-                            Lorem ipsum dolor sit amet consectetur 
-                            adipisicing elit. Eaque doloribus tempora 
-                            quos obcaecati tempore itaque.
-                        </p>
-    
-                        <div class="features__container-content-button">
-                            <button class="button">
-                                More Info
-                            </button>
-                        </div>
-                    </div>
-    
-                    <div class="features__container-content-img--3">
-                        <img 
-                            src="Imagenes/illustration-features-tab-1.svg" 
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="col-md-5 my-5 text-center text-md-start">
+                <h2 class="fw-bold mb-4">
+                    Bookmark in one click
+                </h2>
 
-        <section class="browsers">
-            <div class="browsers__header">
-                <h2>Download the extension</h2>
-
-                <p>
-                    We've got more browsers in the pipeline. Please
-                    let us know if you've got a favourite you'd like
-                    us to prioritize.
+                <p class="me-3 ms-0 px-5 ps-md-0">
+                    Organize bookmarks however you like. Our
+                    simple drag-and-drop interface gives you 
+                    complete control over how you manage your 
+                    favourite sites.
                 </p>
-            </div>
 
-            <div class="browsers__cards">
-                <div class="browsers__cards-card--chrome shadow">
-                    <img 
-                        src="Imagenes/logo-chrome.svg" 
-                        alt="chrome logo"
-                        class="browsers__cards-card--chrome-logo"
-                    />
-
-                    <h4>Add to Chrome</h4>
-
-                    <p>Minimum version 62</p>
-
-                    <img 
-                        class="browsers__cards-dots"
-                        src="Imagenes/bg-dots.svg" 
-                        alt="dots"
-                    />
-
-                    <button class="browsers__button button">
-                        Add & Install Extension
-                    </button>
-                </div>
-
-                <div class="browsers__cards-card--firefox shadow">
-                    <img 
-                        src="Imagenes/logo-firefox.svg" 
-                        alt="firefox logo"
-                        class="browsers__cards-card--firefox-logo"
-                    />
-
-                    <h4>Add to Firefox</h4>
-
-                    <p>Minimum version 55</p>
-
-                    <img 
-                        class="browsers__cards-dots"
-                        src="Imagenes/bg-dots.svg" 
-                        alt="dots"
-                    />
-
-                    <button class="browsers__button button">
-                        Add & Install Extension
-                    </button>
-                </div>
-
-                <div class="browsers__cards-card--opera shadow">
-                    <img 
-                        src="Imagenes/logo-opera.svg" 
-                        alt="opera logo"
-                        class="browsers__cards-card--opera-logo"
-                    />
-
-                    <h4>Add to Opera</h4>
-
-                    <p>Minimum version 46</p>
-
-                    <img 
-                        class="browsers__cards-dots"
-                        src="Imagenes/bg-dots.svg" 
-                        alt="dots"
-                    />
-
-                    <button class="browsers__button button">
-                        Add & Install Extension
-                    </button>
+                <div class="mb-md-3 ms-md-0">
+                    <a href="" class="btn btn-primary p-4 fs-5 button">
+                        More Info
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <section class="faq">
-            <div class="faq__text">
-                <h2>Frequently asked questions</h2>
+            <div class="col d-flex justify-content-center my-md-4">
+                <img 
+                    src="Imagenes/illustration-features-tab-1.svg" 
+                    alt="browser image"
+                />
+            </div>
+    
+            <div class="features__container-content features__container-content--2">
+                <div class="features__content-text">
+                    <h2 class="features__content-text-title">
+                        Speedy searching section
+                    </h2>
 
-                <p>
-                    Here are some of our FAQs. If you have any other 
-                    questions you'd like answered please feel free to
-                    email us.
-                </p>
+                    <p class="searching__text-text">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Eaque doloribus tempora 
+                        quos obcaecati tempore itaque.
+                    </p>
+
+                    <div class="features__container-content-button">
+                        <button class="button">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+
+                <div class="features__container-content-img--2">
+                    <img 
+                        src="Imagenes/illustration-features-tab-1.svg" 
+                        alt=""
+                    />
+                </div>
             </div>
 
-            <div class="faq__details">
-                <hr/>
-                <details class="faq__details-detail">
-                    <summary>What is bookmark?</summary>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Odit mollitia excepturi 
-                        autem hic consequuntur quaerat itaque dolores, 
-                        eum aspernatur reiciendis quis, voluptate quisquam 
-                        assumenda laudantium ducimus. Perferendis omnis 
-                        aspernatur deserunt?
-                    </p>
-                </details>
-                <hr/>
-                <details class="faq__details-detail">
-                    <summary>How can I request a new browser?</summary>
+            <div class="features__container-content features__container-content--3">
+                <div class="features__content-text">
+                    <h2 class="features__content-text-title">Easy sharing section</h2>
 
-                    <p>
+                    <p class="features__content-text-text">
                         Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Odit mollitia excepturi 
-                        autem hic consequuntur quaerat itaque dolores, 
-                        eum aspernatur reiciendis quis, voluptate quisquam 
-                        assumenda laudantium ducimus. Perferendis omnis 
-                        aspernatur deserunt?
+                        adipisicing elit. Eaque doloribus tempora 
+                        quos obcaecati tempore itaque.
                     </p>
-                </details>
-                <hr/>
-                <details class="faq__details-detail">
-                    <summary>Is there a mobile app?</summary>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Odit mollitia excepturi 
-                        autem hic consequuntur quaerat itaque dolores, 
-                        eum aspernatur reiciendis quis, voluptate quisquam 
-                        assumenda laudantium ducimus. Perferendis omnis 
-                        aspernatur deserunt?
-                    </p>
-                </details>
-                <hr/>
-                <details class="faq__details-detail">
-                    <summary>What about other Chromium browsers?</summary>
+                    <div class="features__container-content-button">
+                        <button class="button">
+                            More Info
+                        </button>
+                    </div>
+                </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Odit mollitia excepturi 
-                        autem hic consequuntur quaerat itaque dolores, 
-                        eum aspernatur reiciendis quis, voluptate quisquam 
-                        assumenda laudantium ducimus. Perferendis omnis 
-                        aspernatur deserunt?
-                    </p>
-                </details>
-                <hr/>
+                <div class="features__container-content-img--3">
+                    <img 
+                        src="Imagenes/illustration-features-tab-1.svg" 
+                        alt=""
+                    />
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="faq__more-info">
-                <button class="button">
-                    More Info
+    <section class="browsers">
+        <div class="browsers__header">
+            <h2>Download the extension</h2>
+
+            <p>
+                We've got more browsers in the pipeline. Please
+                let us know if you've got a favourite you'd like
+                us to prioritize.
+            </p>
+        </div>
+
+        <div class="browsers__cards">
+            <div class="browsers__cards-card--chrome shadow">
+                <img 
+                    src="Imagenes/logo-chrome.svg" 
+                    alt="chrome logo"
+                    class="browsers__cards-card--chrome-logo"
+                />
+
+                <h4>Add to Chrome</h4>
+
+                <p>Minimum version 62</p>
+
+                <img 
+                    class="browsers__cards-dots"
+                    src="Imagenes/bg-dots.svg" 
+                    alt="dots"
+                />
+
+                <button class="browsers__button button">
+                    Add & Install Extension
                 </button>
             </div>
-        </section>
-    </main>
+
+            <div class="browsers__cards-card--firefox shadow">
+                <img 
+                    src="Imagenes/logo-firefox.svg" 
+                    alt="firefox logo"
+                    class="browsers__cards-card--firefox-logo"
+                />
+
+                <h4>Add to Firefox</h4>
+
+                <p>Minimum version 55</p>
+
+                <img 
+                    class="browsers__cards-dots"
+                    src="Imagenes/bg-dots.svg" 
+                    alt="dots"
+                />
+
+                <button class="browsers__button button">
+                    Add & Install Extension
+                </button>
+            </div>
+
+            <div class="browsers__cards-card--opera shadow">
+                <img 
+                    src="Imagenes/logo-opera.svg" 
+                    alt="opera logo"
+                    class="browsers__cards-card--opera-logo"
+                />
+
+                <h4>Add to Opera</h4>
+
+                <p>Minimum version 46</p>
+
+                <img 
+                    class="browsers__cards-dots"
+                    src="Imagenes/bg-dots.svg" 
+                    alt="dots"
+                />
+
+                <button class="browsers__button button">
+                    Add & Install Extension
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq__text">
+            <h2>Frequently asked questions</h2>
+
+            <p>
+                Here are some of our FAQs. If you have any other 
+                questions you'd like answered please feel free to
+                email us.
+            </p>
+        </div>
+
+        <div class="faq__details">
+            <hr/>
+            <details class="faq__details-detail">
+                <summary>What is bookmark?</summary>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Odit mollitia excepturi 
+                    autem hic consequuntur quaerat itaque dolores, 
+                    eum aspernatur reiciendis quis, voluptate quisquam 
+                    assumenda laudantium ducimus. Perferendis omnis 
+                    aspernatur deserunt?
+                </p>
+            </details>
+            <hr/>
+            <details class="faq__details-detail">
+                <summary>How can I request a new browser?</summary>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Odit mollitia excepturi 
+                    autem hic consequuntur quaerat itaque dolores, 
+                    eum aspernatur reiciendis quis, voluptate quisquam 
+                    assumenda laudantium ducimus. Perferendis omnis 
+                    aspernatur deserunt?
+                </p>
+            </details>
+            <hr/>
+            <details class="faq__details-detail">
+                <summary>Is there a mobile app?</summary>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Odit mollitia excepturi 
+                    autem hic consequuntur quaerat itaque dolores, 
+                    eum aspernatur reiciendis quis, voluptate quisquam 
+                    assumenda laudantium ducimus. Perferendis omnis 
+                    aspernatur deserunt?
+                </p>
+            </details>
+            <hr/>
+            <details class="faq__details-detail">
+                <summary>What about other Chromium browsers?</summary>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Odit mollitia excepturi 
+                    autem hic consequuntur quaerat itaque dolores, 
+                    eum aspernatur reiciendis quis, voluptate quisquam 
+                    assumenda laudantium ducimus. Perferendis omnis 
+                    aspernatur deserunt?
+                </p>
+            </details>
+            <hr/>
+        </div>
+
+        <div class="faq__more-info">
+            <button class="button">
+                More Info
+            </button>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer__form">
-            <p>35,000 + ALREADY JOINED</p>
+            <p class="text-body-secondary fw-bold">35,000 + ALREADY JOINED</p>
 
-            <h2>Stay up-to-date with what we're doing</h2>
+            <h2 class="fs-2">Stay up-to-date with what we're doing</h2>
 
             <div class="footer__e-mail">
                 <input type="search" placeholder="Enter your email adress"/>
@@ -378,5 +380,6 @@
             <a href="" class="footer__link">CONTACT</a>
         </div>
     </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
