@@ -42,4 +42,23 @@ The directory structure may vary slightly between branches, but generally follow
 │   └── style.css 
 │ └── sass/ # only in the sass branch
 │   └── main.scss
-├── / # only if custom assets are needed
+├── node_modules/
+│   └── bootstrap/ #bootstrap directory
+
+
+---
+
+## 🎯 Project Goals
+
+- Explore different styling methodologies.
+- Compare scalability, modularity, and development speed.
+- Apply Git best practices with a clean branch hierarchy.
+- Gain hands-on experience with CSS preprocessors and UI frameworks.
+
+---
+
+Feel free to clone the repository to practice your own implementations!
+
+👨‍💻 Author
+mstne_03
+GitHub
