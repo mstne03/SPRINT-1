@@ -27,8 +27,15 @@
             text-align: center;
             gap: 3rem;
             margin: 3rem;
-            padding: 3rem;
+            padding: 2rem;
             border-radius: 5px;
+            height: 60rem;
+
+            &-logo {
+                width: 100%;
+                max-width: 120px;
+                align-self: center;
+            }
         }
     }
 }

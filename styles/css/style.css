@@ -242,8 +242,14 @@ html body .shadow {
   text-align: center;
   gap: 3rem;
   margin: 3rem;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 5px;
+  height: 60rem;
+}
+.browsers__cards-card--chrome-logo, .browsers__cards-card--firefox-logo, .browsers__cards-card--opera-logo {
+  width: 100%;
+  max-width: 120px;
+  align-self: center;
 }
 
 .faq {
