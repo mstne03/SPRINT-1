@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/vanilla-css/vanilla-style.css">
     <title>Sprint 1</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
             <a href="" class="header__link">PRICING</a>
             <a href="" class="header__link">CONTACT</a>
 
-            <button class="header__login">
+            <button class="button--secondary">
                 LOGIN
             </button>
         </nav>
@@ -38,7 +38,7 @@
                     tab and see your sites load instantly. For free.
                 </p>
 
-                <button class="download__button-chrome">
+                <button class="button">
                     Get it on Chrome
                 </button>
 
@@ -89,7 +89,7 @@
                         favourite sites.
                     </p>
     
-                    <button class="bookmarking__button">
+                    <button class="button">
                         More Info
                     </button>
                 </div>
@@ -109,7 +109,7 @@
                         Be faster when searching for a particular website.
                     </p>
 
-                    <button class="searching__button">
+                    <button class="button">
                         More Info
                     </button>
                 </div>
@@ -130,7 +130,7 @@
                         with others.
                     </p>
 
-                    <button class="sharing__button">
+                    <button class="button">
                         More Info
                     </button>
                 </div>
@@ -152,52 +152,69 @@
                 us to prioritize.
             </p>
 
-            <div class="browsers__chrome">
-                <img 
-                    src="Imagenes/logo-chrome.svg" 
-                    alt="chrome logo"
-                    class="browsers__logo"
-                />
+            <div class="cards">
+                <div class="browsers__chrome">
+                    <img 
+                        src="Imagenes/logo-chrome.svg" 
+                        alt="chrome logo"
+                        class="browsers__logo"
+                    />
 
-                <h4>Add to Chrome</h4>
+                    <h4>Add to Chrome</h4>
 
-                <p>Minimum version 62</p>
+                    <p>Minimum version 62</p>
 
-                <button class="browsers__button">
-                    Add & Install Extension
-                </button>
-            </div>
+                    <img 
+                        src="Imagenes/bg-dots.svg" 
+                        alt=""
+                    />
 
-            <div class="browsers__firefox">
-                <img 
-                    src="Imagenes/logo-firefox.svg" 
-                    alt="firefox logo"  
-                    class="browsers__logo"
-                />
+                    <button class="button">
+                        Add & Install Extension
+                    </button>
+                </div>
 
-                <h4>Add to Firefox</h4>
+                <div class="browsers__firefox">
+                    <img 
+                        src="Imagenes/logo-firefox.svg" 
+                        alt="firefox logo"  
+                        class="browsers__logo"
+                    />
 
-                <p>Minimum version 55</p>
+                    <h4>Add to Firefox</h4>
 
-                <button class="browsers__button">
-                    Add & Install Extension
-                </button>
-            </div>
+                    <p>Minimum version 55</p>
 
-            <div class="browsers__opera">
-                <img 
-                    src="Imagenes/logo-opera.svg" 
-                    alt="opera logo"  
-                    class="browsers__logo"
-                />
+                    <img 
+                        src="Imagenes/bg-dots.svg" 
+                        alt=""
+                    />
 
-                <h4>Add to Opera</h4>
+                    <button class="button">
+                        Add & Install Extension
+                    </button>
+                </div>
 
-                <p>Minimum version 46</p>
+                <div class="browsers__opera">
+                    <img 
+                        src="Imagenes/logo-opera.svg" 
+                        alt="opera logo"  
+                        class="browsers__logo"
+                    />
 
-                <button class="browsers__button">
-                    Add & Install Extension
-                </button>
+                    <h4>Add to Opera</h4>
+
+                    <p>Minimum version 46</p>
+
+                    <img 
+                        src="Imagenes/bg-dots.svg" 
+                        alt=""
+                    />
+
+                    <button class="button">
+                        Add & Install Extension
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -229,11 +246,11 @@
                 What about other Chromium browsers?
                 <span class="faq__icon"></span>
             </button>
-        </section>
 
-        <button class="browser__button">
-            More Info
-        </button>
+            <button class="button">
+                More Info
+            </button>
+        </section>
     </main>
 
     <footer class="footer">
@@ -242,16 +259,18 @@
 
             <h2>Stay up-to-date with what we're doing</h2>
 
-            <input type="search" placeholder="Enter your email adress"/>
+            <div class="footer__e-mail">
+                <input type="search" placeholder="Enter your email adress"/>
 
-            <button>
-                Contact us
-            </button>
+                <button class="button--secondary">
+                    Contact us
+                </button>
+            </div>
         </div>
 
         <div class="footer__links">
             <img 
-                src="Imagenes/logo-bookmark.svg" 
+                src="Imagenes/logo-bookmark-white.svg" 
                 alt="" 
                 class="footer__logo"
             />

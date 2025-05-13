@@ -20,8 +20,10 @@ img {
 }
 
 button {
-    padding: 0.5rem 1.5rem;
-    border: 1px solid transparent;
+    font-weight: bold;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -47,15 +49,26 @@ button {
     font-weight: 500;
 }
 
-.header__login {
+.button {
+    background-color: #5267df;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: white;
+    color: #5267df;
+    border: 2px solid #5267df;
+}
+
+.button--secondary {
     background-color: #fa5959;
     color: white;
 }
 
-.header__login:hover {
+.button--secondary:hover {
     background-color: white;
     color: #fa5959;
-    border: 1px solid #fa5959;
+    border: 2px solid #fa5959;
 }
 
 /* DOWNLOAD (HERO SECTION) */
@@ -98,8 +111,6 @@ button {
     color: #5267df;
     border: 1px solid #5267df;
 }
-
-
 
 /* FEATURES */
 .features {
@@ -174,8 +185,13 @@ button {
 }
 
 /* BROWSERS */
+.cards {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
 .browsers {
-    background-color: #f7f7f7;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -196,22 +212,6 @@ button {
     padding: 1.5rem;
 }
 
-.browsers__button {
-    background-color: #5267df;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.browsers__button:hover {
-    background-color: white;
-    color: #5267df;
-    border: 1px solid #5267df;
-}
-
 /* FAQ */
 .faq {
     padding: 4rem 2rem;
@@ -224,6 +224,7 @@ button {
 
 .faq__button {
     width: 100%;
+    color: #242a45;
     background: none;
     border: none;
     border-radius: 0;
@@ -243,42 +244,53 @@ button {
 
 /* FOOTER */
 .footer {
-    background-color: #242a45;
+    display: flex;
+    flex-direction: column;
+    background-color: #5267df;
     color: white;
-    padding: 4rem 2rem;
     text-align: center;
 }
 
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer__e-mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+}
+
 .footer input[type="search"] {
-    padding: 0.5rem;
+    padding: .8rem;
     border-radius: 5px;
     border: none;
     width: 200px;
-    margin-right: 1rem;
-}
-
-.footer button {
-    padding: 0.5rem 1rem;
-    background-color: #fa5959;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
+    font-weight: bold;
 }
 
 .footer__links {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+    background-color: #242a45;
+    padding: 1.5rem 3rem;
 }
 
 .footer__link {
     color: white;
     text-decoration: none;
     font-weight: 500;
+}
+
+.footer__logo {
+    width: 100%;
+    max-width: 148px;
 }
 
 @media (max-width: 768px) {
