@@ -1,0 +1,41 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.browsers {
+    display: flex;
+    flex-direction: column;
+    
+    &__header {
+        text-align: center;
+        margin: 2rem 6rem;
+
+        @media only screen and (min-width: 768px) {
+            margin: 2rem 20rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        
+        &-card--chrome,
+        &-card--firefox,
+        &-card--opera {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 3rem;
+            margin: 3rem;
+            padding: 2rem;
+            border-radius: 5px;
+            height: 60rem;
+
+            &-logo {
+                width: 100%;
+                max-width: 120px;
+                align-self: center;
+            }
+        }
+    }
+}
