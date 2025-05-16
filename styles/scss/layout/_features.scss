@@ -4,30 +4,39 @@
 .features {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__header {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 0 9rem;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
 
-        @media only screen and (min-width: 800px) {
-            margin: 0 15rem;
+        &-title {
+            margin-bottom: 1rem;
         }
-    }
 
-    &__container {
+        &-text {
+            margin-bottom: 3rem;
+        }
+
         &-selectors{
+            width: 100%;
             display: flex;
-            justify-content: space-evenly;
-            text-align: center;
-            margin: 0 6rem;
+            justify-content: center;
+            gap: .6rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
 
             &-button {
                 background-color: transparent;
-                margin: 2rem auto;
                 color: variables.$light-text;
-                padding: 2.5rem;
+                padding: 1rem 2rem;
                 border: .2rem solid transparent;
+                border-bottom: .2rem solid variables.$light-text;
                 font-weight: bold;
                 font-size: 1.5rem;
 
@@ -37,12 +46,34 @@
                     );
                 }
             }
-        }
 
+            hr {
+                display: none;
+            }
+
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+
+                &-button {
+                    padding: 2.5rem;
+                }
+                
+                hr {
+                    display: flex;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__container {
         &-content {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             gap: 6rem;
+            margin: 3rem auto;
 
             &-text {
                 margin: auto 6rem;
@@ -54,14 +85,14 @@
             }
 
             &-button {
-                margin: 2rem;
+                margin: 2rem auto;
             }
 
             @media only screen and (max-width: 768px) {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                margin: auto 9rem;
+                margin: 3rem 6rem;
                 
                 &--2,
                 &--3 {

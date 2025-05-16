@@ -53,7 +53,6 @@ html body .shadow {
   padding: 2rem 2.5rem;
   border: 2px solid #5368df;
   border-radius: 0.5rem;
-  margin: 1rem;
 }
 .button:hover {
   background-color: white;
@@ -129,15 +128,15 @@ html body .shadow {
 .hero__content {
   flex: 1;
 }
+.hero__content-btns {
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem 0;
+  gap: 3rem;
+}
 .hero__image {
   flex: 1;
   position: relative;
-}
-.hero__info-btns {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin: 2rem auto;
 }
 @media only screen and (max-width: 768px) {
   .hero {
@@ -149,48 +148,77 @@ html body .shadow {
     text-align: center;
     margin: 0 6rem;
   }
+  .hero__content-btns {
+    justify-content: space-evenly;
+  }
 }
 
 .features {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .features__header {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 9rem;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
-@media only screen and (min-width: 800px) {
-  .features__header {
-    margin: 0 15rem;
-  }
+.features__header-title {
+  margin-bottom: 1rem;
 }
-.features__container-selectors {
+.features__header-text {
+  margin-bottom: 3rem;
+}
+.features__header-selectors {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  margin: 0 6rem;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
-.features__container-selectors-button {
+.features__header-selectors-button {
   background-color: transparent;
-  margin: 2rem auto;
   color: #9194a1;
-  padding: 2.5rem;
+  padding: 1rem 2rem;
   border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid #9194a1;
   font-weight: bold;
   font-size: 1.5rem;
 }
-.features__container-selectors-button:hover {
+.features__header-selectors-button:hover {
   background-color: none;
   cursor: pointer;
   color: #fa5757;
   border: 0.2rem solid transparent;
   border-bottom: 0.2rem solid #fa5757;
 }
+.features__header-selectors hr {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .features__header-selectors {
+    display: flex;
+    flex-direction: column;
+  }
+  .features__header-selectors-button {
+    padding: 2.5rem;
+  }
+  .features__header-selectors hr {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+}
 .features__container-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 6rem;
+  margin: 3rem auto;
 }
 .features__container-content-text {
   margin: auto 6rem;
@@ -199,14 +227,14 @@ html body .shadow {
   display: none;
 }
 .features__container-content-button {
-  margin: 2rem;
+  margin: 2rem auto;
 }
 @media only screen and (max-width: 768px) {
   .features__container-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: auto 9rem;
+    margin: 3rem 6rem;
   }
   .features__container-content--2, .features__container-content--3 {
     display: none;

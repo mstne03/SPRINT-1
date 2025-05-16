@@ -8,18 +8,18 @@
     
     &__content {
         flex: 1;
+
+        &-btns {
+            display: flex;
+            align-items: flex-start;
+            margin: 3rem 0;
+            gap: 3rem;
+        }
     }
 
     &__image {
         flex: 1;
         position: relative;
-    }
-
-    &__info-btns {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin: 2rem auto;
     }
 
     @media only screen and (max-width: 768px) {
@@ -30,6 +30,10 @@
         &__content {
             text-align: center;
             margin: 0 6rem;
+
+            &-btns {
+                justify-content: space-evenly;
+            }
         }
     }
 }
