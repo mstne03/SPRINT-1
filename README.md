@@ -43,7 +43,7 @@ The directory structure may vary slightly between branches, but generally follow
 │ └── sass/ # only in the sass branch
 │   └── main.scss
 ├── node_modules/
-│   └── bootstrap/ #bootstrap directory
+│   └── bootstrap/ #bootstrap directory only in the bootstrap branch
 
 
 ---
