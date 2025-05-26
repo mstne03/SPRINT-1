@@ -1,6 +1,6 @@
 # Web Design Replication Using CSS, Sass, and Bootstrap
 
-This project demonstrates three different implementations of the same web page design using various styling technologies. Each approach is isolated in its own Git branch to allow clear comparison and modular development.
+This project demonstrates three different implementations of the same web page design using various styling technologies. Each approach is isolated in its own Git branch to allow clear comparison and modular development. These three implementations have been merged into the main branch, combining them altogether.
 
 ---
 
